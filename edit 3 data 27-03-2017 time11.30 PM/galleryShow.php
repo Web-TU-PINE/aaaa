@@ -6,14 +6,14 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
-    
+
     <title>All Gallery</title>
     <?php
         include('include/head-tag.php');
     ?>
    </head>
     <body>
-        
+
        <!--START HOME SECTION-->
         <div id="home-sec">
             <div class="img-head">
@@ -21,14 +21,14 @@
             </div>
         </div>
         <!--END HOME SECTION-->
-        
-        
+
+
        <!--START NAV SECTION-->
          <?php
             include('include/MENU.php');
         ?>
         <!--END NAV SECTION-->
-        
+
         <!--PERSON SECTION START -->
         <section id="port-sec">
             <div class="container">
@@ -37,148 +37,30 @@
                         <div class="col-md-12 col-sm-12 alert-info">
                             <h4>ปลูกป่าชายเลน อ่าวทุ่งโปร่ง กองพันลาดตระเวณ</h4>
                         </div>
-                         
+
         <div class="container">
             <div class="row">
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                      <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a data-fancybox="gallery" href="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                        <img src="https://scontent.fbkk1-2.fna.fbcdn.net/v/t34.0-12/17105459_1411040445634861_1929367491_n.jpg?oh=3b3d485b4db750417085b63382acade0&oe=58BBD2F2">
-                      </a>
-                    </div>
-                        <!-- thumbnail -->
-                        <p class="caption">xxxxxx</p>
-                </div>
-                <!--col-md-3-->
-                
-                
-                
+                <?php
+
+                  include('Logig/ManageGallery.php');
+                  // $obj = new ManageNews;
+                  // echo $obj->ShowTop3News(6,7);
+                    $obj = new ManageGallery;
+             foreach($obj->ShowAllgalleryImage($_GET['id']) as $value){
+                 echo "<div class='col-md-2'>";
+                  echo "<a data-fancybox='gallery' href='Logig/Image/1.jpg.jpeg'>";
+                  echo "  <img src='Logig/Image/".$value['name_img']."' height='200' width='200'/>";
+                  echo "</a></div>";
+
+
+                 }
+
+               ?>
+
             </div>
             <!--row-->
         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -191,12 +73,12 @@
         ?>
         </div>
         <!--END FOOTER-->
-        
+
 <?php
             include('include/script.php');
         ?>
     <!--Jquery-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
     <style type="text/css">
         .thumbnail{
             width: 100%;
@@ -212,6 +94,6 @@
          <script src="//code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
         <link  href="assets/dist/jquery.fancybox.css" rel="stylesheet">
          <script src="assets/dist/jquery.fancybox.js"></script>
-         
+
     </body>
 </html>

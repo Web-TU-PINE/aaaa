@@ -6,7 +6,7 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
-  
+
     <title>Gallery</title>
    <?php
         include('include/head-tag.php');
@@ -20,38 +20,44 @@
             </div>
         </div>
         <!--END HOME SECTION-->
-        
-       
+
+
        <!--START NAV SECTION-->
        <?php
             include('include/MENU.php');
+
         ?>
         <!--END NAV SECTION-->
-        
-       <section id="port-sec">
-            <div class="container">
-                <div class="row g-pad-bottom">
-                    <div class="text-center g-pad-bottom">
-                        <div class="col-md-12 col-sm-12 alert-info">
-                            <h4>กิจกรรมทั้งหมด</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-0/c50.0.200.200/p200x200/15170826_1026987500756411_7056300136751481514_n.jpg?oh=a366ca1f92a74c28056ee65c5952662e&oe=59303839" width="300">
-                        <h6 class="">ปลูกป่าชายเลน อ่าวทุ่งโปร่ง กองพันลาดตระเวณ</h6>
-                        <div class="text-center"><a href="galleryShow.php"><button class="btn btn-success" onclick="www.google.com">ดูรูปภาพ</button></a></div>
-                    </div>
-                      <div class="col-md-6">
-                        <img src="https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-0/c63.0.200.200/p200x200/15391072_1042148729240288_8974622533666676364_n.jpg?oh=8c7a6590b9531ea22c2c7f2dc4537cc6&oe=593B3E1A" width="300">
-                        <h6 class="">กิจกรรมกีฬาสานสัมพันธ์นักศึกษา,อาจารย์และเจ้าหน้าที่</h6>
-                        <div class="text-center"><a href="galleryShow.php"><button class="btn btn-success" onclick="www.google.com">ดูรูปภาพ</button></a></div>
-                    </div>
-                   
-                </div>
-            </div>
-        </section>
+
+       <div class="row">
+         <div class="col-md-12">
+            <div class="text-center"><h1> กิจกรรม </h1></div>
+         </div>
+       </div>
+
+       <div class="row">
+        <div class="col-md-12"style="padding-left:20px;padding-right:20px;">
+          <!-- <div class="item  active"> -->
+          <div class="row" style="padding-left:120px;padding-r:10px; text-align:center;">
+          <?php
+            include('Logig/ManageGallery.php');
+            // $obj = new ManageNews;
+            // echo $obj->ShowTop3News(6,7);
+              $obj = new ManageGallery;
+       foreach($obj->ShowAllgallery() as $value){
+           echo "<div class='col-md-4' >";
+            echo "<h2>".$value['Activity']."</h2>";
+            echo "<a class='btn btn-primary btn-lg' href='galleryShow.php?id=".$value['ActivityCode']."'>Read More >> </a>";
+            echo "</div>";
+
+           }
+
+         ?>
+           </div>
+        </div>
+       </div>
+
+
 
           <!--START FOOTER-->
          <div class="col-md-12 footer">
@@ -60,10 +66,10 @@
         ?>
         </div>
         <!--END FOOTER-->
-        
-   <?php
+
+          <?php
             include('include/script.php');
-        ?>
+            ?>
 
     </body>
 </html>
