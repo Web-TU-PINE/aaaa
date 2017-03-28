@@ -37,6 +37,7 @@
                             <li class="tab-link current" data-tab="tab1">ข้อมูลทั่วไป</li>
                             <li class="tab-link" data-tab="tab2">หลักสูตร</li>
                             <li class="tab-link" data-tab="tab3">แผนการศึกษา</li>
+                            <li class="tab-link" data-tab="tab4">ตารางสอบ/ตารางสอน</li>
                         </ul>
                     <div class="tab-contents">
                         <!--START INFOMATION TAB-1 SECTION-->

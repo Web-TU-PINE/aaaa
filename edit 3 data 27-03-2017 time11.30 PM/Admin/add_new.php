@@ -4,8 +4,8 @@
         <title>Add_news</title>
         
         <?php
-             include('../include/TabAdminMenu.php');
-            include('StyleHandle.css');
+                
+                include('StyleHandle.css');
         ?>
          
     </head>

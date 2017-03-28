@@ -33,6 +33,7 @@ class ManageNews
             $sql = "INSERT INTO tbl_news(header,content,nameimg) VALUES ('$header','$content','$nameimg')";
             $query = mysqli_query($conn,$sql);
         if($query){
+            header("Location: ..\AdminMenu.php?status=admin");
             return "Add Profile Complete";
         }else{
             return "error";
@@ -46,6 +47,7 @@ class ManageNews
         $sql = "UPDATE tbl_news set header = '$header',content='$content' WHERE id='".$id."'";
         $query = mysqli_query($conn,$sql);
         if($query){
+             
             return "Edit News Complete";
         }else{
             return "error";
@@ -68,6 +70,7 @@ class ManageNews
 			$sql = "DELETE FROM tbl_news WHERE id='$id'";
 			$query = mysqli_query($conn,$sql);
 			if($query){
+                header("Location: ..\project\showAllnew.php?status=admin");
 					return $date = "Delete Complete";
 			}
 		}
