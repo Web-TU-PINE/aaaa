@@ -19,3 +19,4 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/CssForCourse.css">
     <link rel="stylesheet" type="text/css" href="assets/css/CssForHistory.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/teststyle.css">
