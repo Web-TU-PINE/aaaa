@@ -56,7 +56,7 @@ class ManageNews
     }
 
      public function Select_News($id=null){
-          include('../include/connectdb.php');
+          include('./include/connectdb.php');
          $sql = "SELECT*FROM tbl_news WHERE id = '".$id."'";
          $query = mysqli_query($conn,$sql);
          return mysqli_fetch_array($query);
