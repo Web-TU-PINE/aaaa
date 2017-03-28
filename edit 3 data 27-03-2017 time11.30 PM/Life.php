@@ -6,77 +6,99 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
-   
     <title>LIFE</title>
     <?php
         include('include/head-tag.php');
     ?>
+    <link rel="stylesheet" type="text/css" href="assets/css/CssForCourse.css">
+</head>
     <body>
         <!--START HOME SECTION-->
         <div id="home-sec">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <span class="head-main">thammast university</span>
-                        <h3 class="head-last col-md-4 col-md-offset-4  col-sm-6 col-sm-offset-3">pattaya campus</h3>
-                    </div>
-                </div>
+            <div class="img-head">
+                <img src="assets/img/logo.gif">
             </div>
         </div>
         <!--END HOME SECTION-->
-        
-        
+
+
        <!--START NAV SECTION-->
          <?php
             include('include/MENU.php');
         ?>
         <!--END NAV SECTION-->
-        
-        
-          <section id="port-sec">
-            <div class="container">
-                <div class="row g-pad-bottom">
-                    <div class="text-center g-pad-bottom">
-                        <div class="col-md-12 col-sm-12 alert-info">
-                            <h4>รูปภาพ</h4>
+
+        <!--START TAB SOFT SECTION-->
+
+        <div class="col-md-12">
+            <div class="tab-example">
+                        <ul class="tabs">
+                            <li class="tab-link current" data-tab="tab1">นักศึกษา</li>
+                            <li class="tab-link" data-tab="tab2">สถานที่</li>
+                        </ul>
+                    <div class="tab-contents">
+                        <!--START INFOMATION TAB-1 SECTION-->
+                        <div class="tab-pane" id="tab1">
+                          <div class="texttitle">ความเป็นอยู่นักศึกษา</div><br>
+                          <div class="text-lift-student">ความคิดเห็นจากนักศึกษาที่เคยอาศัยอยู่ : ชีวิตความเป็นอยู่ที่นี้ตั้งเเต่เข้ามาตอนปี2
+                          ช่วงแรกชีวิตความเป็นอยู่ ไม่ค่อยมีอะไรมาก เพราะที่นี้ไม่ค่อยมีสิ่งอำนวยความสะดวกสักเท่าไหร่อย่างเช่น ร้านสะดวกซื้อ/ร้านอาหาร/ห้องส่วนรวม
+                          เลยต้องปรับตัวอย่างมากในช่วงแรกๆ เเต่พอผ่านช่วงแรกมาได้ก็เริ่มปรับตัวได้ เริ่มหากิจกรรมทำในยามว่าง เช่น การทำอาหาร การว่ายน้ำ เล่นกีฬา ฯลฯ
+                          ได้มีการเรียนรู้สิ่งใหม่ๆ ประสบการณ์ใหม่ที่ไม่เคยได้มาก่อนจากที่รังสิต หรือจากที่บ้านเองก็ตาม</div>
+
+                          <div class="pic_life"><img src="assets/img/R1.jpg" alt="Mountain View" style="width:800px;height:350px;"></div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="https://scontent.fbkk7-2.fna.fbcdn.net/v/t34.0-12/17078601_1439447619433228_1275697189_n.jpg?oh=ac797183ec967f966d3f92bfd7a8fddb&oe=58B85C6B" width="300" height="500">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="https://scontent.fbkk7-2.fna.fbcdn.net/v/t34.0-12/17093836_1439446326100024_689410859_n.jpg?oh=cfec0ebbfa97f521e69699580db03c10&oe=58B76D22" width="300" height="500">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="https://scontent.fbkk7-2.fna.fbcdn.net/v/t34.0-12/17035418_1439446379433352_1599626033_n.jpg?oh=acc5b2bafc088013392f30f1499c6cb5&oe=58B87CFA" width="300" height="500">
-                    </div>
-                    
-                     <div class="col-md-4">
-                        <img src="https://scontent.fbkk7-2.fna.fbcdn.net/v/t34.0-12/17092056_1439447589433231_1063410696_n.jpg?oh=ccd1343fa40383424e3884938b40d165&oe=58B898AE" width="300">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="https://scontent.fbkk7-2.fna.fbcdn.net/v/t34.0-12/17092134_1439446336100023_2139427245_n.jpg?oh=cbaad22b9ddd8f5192bba290c24a5242&oe=58B7711B" width="300" height="500">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="https://scontent.fbkk7-2.fna.fbcdn.net/v/t34.0-12/17078408_1439446606099996_2060014240_n.jpg?oh=f479435606cbfb301fdfedc869b0874a&oe=58B77CE3" width="300" height="500">
-                    </div>
-                </div>
+
+                       <!--END INFOMATION TAB-1 SECTION-->
+
+                        <!--START INFOMATION TAB-1 SECTION-->
+                        <div class="tab-pane" id="tab2"><p style="margin-left:18pt;">
+                            <div class="texttitle">สถานที่ในเขต มหาลัย</div><br>
+                            <div class="text-lift-location-topic">1.อาคารปฏิบัติการทางด้านวิศวกรรมศาสตร์</div>
+                            <div class="text-lift-location-text">อาคารที่จะใช้ในการปฏิบัติการต่างๆทางด้านวิศวกรรม โดยตอนนี้จะมีห้องที่ใช้ในปฏิบัติการให้แก่ 2 สาขา ได้แก่ สาขายานยนต์ และ สาขาซอฟต์แวร์ (หากจะมาติดต่อเจ้าหน้าที่โครงการต่างๆของคณะวิศวกรรมศาสตร์ ศูนย์พัทยา ก็ต้องมาที่อาคารนี้ เพราะเจ้าหน้าที่ของคณะจะอยู่ที่อาคารนี้)</div>
+                            <div class="text-lift-location-topic">2.อาคารบรรยายรวม</div>
+                            <div class="text-lift-location-text">อาคารที่ใช้ในการเรียนการสอนที่เน้นการบรรยายเป็นหลัก ซึ่งในตัวอาคารบรรยายรวมจะมี</div>
+                              <div class="text-lift-location-text">- ห้องการเรียนการสอนแบบบรรยาย อยู่บริเวณชั้นสองของอาคาร</div>
+                              <div class="text-lift-location-text">- ห้องเจ้าหน้าที่พัสดุ ห้องนี้จะเป็นห้องที่เจ้าหน้าที่จะใช้ในการจัดเก็บอุปกรณ์หรือพัสดุต่างๆที่ถูกส่งมา นักศึกษาสามารถมารับจดหมายที่ถูกส่งมายังหอพักมหาวิทยาลัยได้ทางห้องนี้ และหากต้องการอุปกรณ์เสริมต่างหรืออุปกรณ์ห้องบรรยายภายในอาคารบรรยายรวมเสียสามารถมาแจ้งเจ้าหน้าที่ห้องนี้ได้ ซึ่งทางเจ้าหน้าที่จะไปทำการซ่อมให้ ห้องเจ้าหน้าที่พัสดุนี้จะอยู่บริเวณชั้นสองของอาคาร</div>
+                              <div class="text-lift-location-text">- ห้องอธิการบดี อยู่บริเวณชั้นสองของอาคาร เป็นห้องไว้ติดต่ออธิการบดีของมหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา (ปกติทั่วไปจะไม่เจอท่านในห้อง แต่จะพบเจอท่านเฉพาะตอนมีนักศึกษาเข้าใหม่ มายังศูนย์พัทยา)</div>
+                              <div class="text-lift-location-text">- ห้องสมุดมหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา อยู่บริเวณชั้นล่างของอาคาร เปิดเวลา 8.30-16.00 น.</div>
+                              <div class="text-lift-location-text">- ห้องโถงใหญ่ของมหาลัยธรรมศาสตร์ ศูนย์พัทยา อยู่บริเวณชั้นล่างของอาคาร เป็นห้องที่ไว้จัดงานประชุมหรือกิจกรรมต่างๆของมหาวิทยาลัย</div>
+                            <div class="text-lift-location-topic">3.สิ่งอำนวยความสะดวกภายในมหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา</div>
+                              <div class="text-lift-location-text">-จะมีสถานที่ฟิตเนส</div>
+                              <div class="text-lift-location-text">-สถานที่ออกลังกาย</div>
+                              <div class="text-lift-location-text">-สถานที่ว่ายน้ำและร้านค้ามินิมาร์ท</div>
+                            <div class="text-lift-location-topic">4.บริเวณหอพักนักศึกษามหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา</div>
+                            <div class="text-lift-location-text">ซึ่งจะเป็นหอพักใน ข้างในบริเวณหอพักจะแยกโซนชายและหญิงนอกจากนั้นยังมีห้องCommon Room ให้ได้ใช้ร่วมกันและมีรปภ.คุม ณ บริเวณอาคารหญิงและแม่บ้านมาที่มาทำความสะอาด ช่วงเช้าถึงเย็น (มีWIFIและสายแลนภายในหอพัก)</div>
+                                <br><br><br>
+                            <div class="pic_life"><img src="assets/img/EN1.jpg" alt="Mountain View" style="width:800px;height:350px;"></div>
+                            <div class="pic_life"><img src="assets/img/EN2.jpg" alt="Mountain View" style="width:800px;height:350px;"></div>
+                            <div class="pic_life"><img src="assets/img/SC1.jpg" alt="Mountain View" style="width:800px;height:350px;"></div>
+                            <div class="pic_life"><img src="assets/img/F1.jpg" alt="Mountain View" style="width:800px;height:200px;"></div>
+                        </div>
+                        <!--END INFOMATION TAB-1 SECTION-->
+                   </div>
             </div>
-        </section>
-        
-          <!--START FOOTER-->
-        <div class="col-md-12 footer">
+        </div>
+        <!--END TAB SOFT SECTION-->
+
+
+        <!--START INFOMATION TAB-1 SECTION-->
+        <div class="infomation col-md-12" id="tabs-1">
+
+        </div>
+        <!--END INFOMATION TAB-1 SECTION->
+
+
+        <!--START FOOTER-->
+         <div class="col-md-12 footer">
         <?php
             include('include/FOOTER.php');
         ?>
         </div>
         <!--END FOOTER-->
-        
-        
-        <?php
+
+   <?php
             include('include/script.php');
         ?>
+
     </body>
-</html>
+  </html>
