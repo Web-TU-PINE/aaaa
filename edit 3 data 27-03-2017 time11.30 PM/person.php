@@ -3,144 +3,71 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
-   
+
     <title>PERSONAL</title>
    <?php
         include('include/head-tag.php');
     ?>
    </head>
     <body>
-        
+
          <!--START HOME SECTION-->
-        <div id="home-sec">
-            <div class="img-head">
-                <img src="assets/img/logo.gif">
-            </div>
+        <div class="home-sec">
+
+                <img src="assets/img/logo1.jpg" width="100%" height="100%">
+
         </div>
         <!--END HOME SECTION-->
-        
-        
+
+
        <!--START NAV SECTION-->
          <?php
             include('include/MENU.php');
         ?>
         <!--END NAV SECTION-->
-        
+
         <!--PERSON SECTION START -->
-        <section id="port-sec">
-            <div class="container">
-                <div class="row g-pad-bottom">
-                    <div class="text-center g-pad-bottom">
-                        <div class="col-md-12 col-sm-12 alert-info">
-                            <h4>บุคลากร</h4>
-                        </div>
-                    </div>
+        <!-- <div class="row">
+              <div class="col-md-10" style="text-align:center;">
+                <div class="col-md-4">
+                    <img class="img-person" src="assets/img/logo1.jpg" width="300" height="430"/>
                 </div>
-                <div class="row g-paf-bottom">
-                    <div class="col-md-10 col-md-offset-1  col-sm-12">
-                        <ul class="portfolio-items col-3">
-                            <li class="portfolio-item col-md-3">
-                                <div class="item-main">
-                                    <div class="portfolio-image">
-                                        <img src="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19   "width="300" height="300" alt="">
-                                        <div class="overlay">
-                                            <a class="preview btn btn-danger t"title="อาตารย์ต่าย" href="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19">
-                                                <i class=" fa fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="portfolio-item col-md-3">
-                                <div class="item-main">
-                                    <div class="portfolio-image">
-                                        <img src="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19   "width="300" height="300" alt="">
-                                        <div class="overlay">
-                                            <a class="preview btn btn-danger t"title="อาตารย์ต่าย" href="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19">
-                                                <i class=" fa fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                              <li class="portfolio-item col-md-3">
-                                <div class="item-main">
-                                    <div class="portfolio-image">
-                                        <img src="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19   "width="300" height="300" alt="">
-                                        <div class="overlay">
-                                            <a class="preview btn btn-danger t"title="อาตารย์ต่าย" href="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19">
-                                                <i class=" fa fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="portfolio-item col-md-3">
-                                <div class="item-main">
-                                    <div class="portfolio-image">
-                                        <img src="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19   "width="300" height="300" alt="">
-                                        <div class="overlay">
-                                            <a class="preview btn btn-danger t"title="อาตารย์ต่าย" href="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19">
-                                                <i class=" fa fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                              <li class="portfolio-item col-md-3">
-                                <div class="item-main">
-                                    <div class="portfolio-image">
-                                        <img src="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19   "width="300" height="300" alt="">
-                                        <div class="overlay">
-                                            <a class="preview btn btn-danger t"title="อาตารย์ต่าย" href="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19">
-                                                <i class=" fa fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="portfolio-item col-md-3">
-                                <div class="item-main">
-                                    <div class="portfolio-image">
-                                        <img src="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19   "width="300" height="300" alt="">
-                                        <div class="overlay">
-                                            <a class="preview btn btn-danger t"title="อาตารย์ต่าย" href="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19">
-                                                <i class=" fa fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                              <li class="portfolio-item col-md-3">
-                                <div class="item-main">
-                                    <div class="portfolio-image">
-                                        <img src="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19   "width="300" height="300" alt="">
-                                        <div class="overlay">
-                                            <a class="preview btn btn-danger t"title="อาตารย์ต่าย" href="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19">
-                                                <i class=" fa fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="portfolio-item col-md-3">
-                                <div class="item-main">
-                                    <div class="portfolio-image">
-                                        <img src="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19   "width="300" height="300" alt="">
-                                        <div class="overlay">
-                                            <a class="preview btn btn-danger t"title="อาตารย์ต่าย" href="https://scontent.fbkk2-1.fna.fbcdn.net/v/t34.0-12/16997439_181447039018243_1817384866_n.jpg?oh=2583b8f042144f97ecc4bf8ea59d79b6&oe=58B6EE19">
-                                                <i class=" fa fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                    </div>
+                <div class="col-md-12">
+
                 </div>
-            </div>
-        </section>
+              </div>
+        </div> -->
+        <?php
+         include('Logig\ManagePerson.php');
+                $obj = new ManagePerson;
+            if(isset($_GET['del'])){
+                $obj->Del_person($_GET['del']);
+        }
+        ?>
+        <!--Start Show Person-->
+        <div class="row">
+            <?php
+
+            foreach($obj->ShowAllperson() as $value){
+                echo "<div class='col-md-10' style='text-align:center;margin-bottom:30px;'>";
+                echo "<div class='col-md-3'></div><div class='col-md-2' >
+                    <img class='img-person' src='Logig/Image/".$value['nameimg']."' width='200' height='280'/>
+                    </div>";
+                echo "<div class='box-person col-md-4' style='padding-top:100px;'>";
+                echo "Name : ".$value['name']." &nbsp; &nbsp;".$value['lastname']."<br><br>";
+                echo "ตำแหน่ง : ".$value['position']."<br><br>";
+                if(isset($_GET['status'])){
+                    if($_GET['status']=='admin'){
+                        echo "<a class='btn btn-success'  href='Admin/edit_person.php?id=".$value['id']."'>Edit</a>&nbsp";
+                         echo "<a class='btn btn-danger' href='?del=".$value['id']."'>Delete</a>";
+                    }
+                }
+                echo "</div></div>";
+                echo "<div class='col-md-3'></div> <br><br><br>";
+            }
+            ?>
+        </div>
+        <!--End  Show Person-->
 
         <!--START FOOTER-->
         <div class="col-md-12 footer">
@@ -149,7 +76,7 @@
         ?>
         </div>
         <!--END FOOTER-->
-    
+
     <?php
             include('include/script.php');
         ?>

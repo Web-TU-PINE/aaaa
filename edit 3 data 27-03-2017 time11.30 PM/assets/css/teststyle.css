@@ -7,7 +7,7 @@ body{
     font-size:14px;
     color: black;
      background-color: burlywood;
-    
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,17 +48,18 @@ p {
     padding-bottom: 30px;
 }
 .positon-btn{
-    
+
 }
 /*=======================================
     HOME SECTION STYLES
 ==================================================*/
-#home-sec{
-  background: black;
+.home-sec{
+  margin-top: 0;
+  background: white;
 }
 
 /* ===========================================================
-   NAVBAR CHANGES   
+   NAVBAR CHANGES
    ============================================================*/
 
 .navbar{
@@ -145,7 +146,7 @@ p {
 TAB SOFT CLASSES
 -------------------------------------------------*/
 body {
-    margin-top: 80px;
+    margin-top:0;
     font-family: "Varela Round", sans-serif;
 }
 .container {

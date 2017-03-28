@@ -37,7 +37,6 @@
             include('Logig/ManagePerson.php');
                     $obj = new Manageperson;
                     $row = $obj->Select_News($_GET['id']);
-
             ?>
         <div class="row">
         <div class="showNew col-md-8">
@@ -68,7 +67,6 @@
             <div class="showTabNew col-md-4">
             <div class="header"> <h1>หัวข้อข่าว</h1></div>
                    <?php
-
             foreach($obj->ShowAllNews() as $value){
                 echo "<div class='col-md-10 '>";
                // echo "<h2>".$value['header']."</h2>";
@@ -114,3 +112,5 @@
 
     </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

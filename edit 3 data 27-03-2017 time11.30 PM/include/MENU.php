@@ -1,5 +1,5 @@
 
-        
+
         <!--START NAV SECTION-->
         <div class="navbar navbar-inverse ">
             <div class="container">
@@ -42,12 +42,10 @@
                         echo "<li><a href='person.php'>PERSON</a></li>";
                         echo "<li><a href='Life.php'>LIFE</a></li>";
                         echo " <li><a href='gallery.php'>GALLERY</a></li>";
-                     }   
+                     }
                     ?>
                     </ul>
                 </div>
             </div>
         </div>
         <!--END NAV SECTION-->
-        
-    

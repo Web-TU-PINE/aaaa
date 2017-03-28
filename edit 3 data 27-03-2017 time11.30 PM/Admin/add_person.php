@@ -3,7 +3,7 @@
     <head>
         <title>Add_person</title>
         <?php
-             include('../include/TabAdminMenu.php');
+
              include('StyleHandle.css');
         ?>
       </head>
@@ -15,7 +15,7 @@
           if(isset($_POST['submitAddPerson'])){
               if(isset($_POST)){
                   $name = $_FILES['image']['name'];
-              echo $obj->add_person($_POST['position'],$_POST['name'], $_POST['lastname'],$name);
+              echo $obj->Add_person($_POST['position'],$_POST['name'], $_POST['lastname'],$name);
               }
           }else{
               echo "NOOOOOOoooo";

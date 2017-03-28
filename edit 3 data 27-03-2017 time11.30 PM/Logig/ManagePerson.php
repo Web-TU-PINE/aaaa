@@ -18,10 +18,8 @@ class ManagePerson
             $date[] = $row;
         }
         return $date;
-
     }
-
-      public function Add_person($position=null,$name=null,$lastname=null,$name_img=null){
+      public function Add_person($position=null,$name=null,$lastname=null,$nameimg=null){
          include('../include/connectdb.php');
          $Fullname = $_FILES['image']['name'];
          $type = explode(".",$Fullname);
@@ -31,7 +29,7 @@ class ManagePerson
          if($type=='JPG'||$type=='jpg'||$type=='png'){
             $url = '../Logig/Image/'.$Cutname.'.'.$type;
              move_uploaded_file($temp,$url);
-            $sql = "INSERT INTO tbl_person(position,name,lastname,name_img) VALUES ('$position','$name','$lastname','$name_img')";
+            $sql = "INSERT INTO tbl_person(position,name,lastname,nameimg) VALUES ('$position','$name','$lastname','$nameimg')";
             $query = mysqli_query($conn,$sql);
         if($query){
             return "Add Profile Complete";
@@ -42,29 +40,25 @@ class ManagePerson
              echo "ไม่สนับสนุนไฟล์นี้";
         }
     }
-     public function Edit_person($position=null,$name=null,$lastname=null,$name_img=null){
-       include('./include/connectdb.php');
-        $sql = "UPDATE tbl_person set position = '$position',name='$name',lastname='$lastname' WHERE id='".$id."'";
+     public function Edit_person($position=null,$name=null,$id=null,$lastname=null,$nameimg=null){
+       include('../include/connectdb.php');
+        $sql = "UPDATE tbl_person set position = '$position',name='$name',lastname='$lastname',nameimg='$nameimg' WHERE id='".$id."'";
         $query = mysqli_query($conn,$sql);
         if($query){
+          header("Location: ..\person.php?status=admin");
             return "Edit person Complete";
         }else{
             return "error";
         }
-
     }
-
      public function Select_person($id=null){
-          include('./include/connectdb.php');
+          include('../include/connectdb.php');
          $sql = "SELECT*FROM tbl_person WHERE id = '".$id."'";
          $query = mysqli_query($conn,$sql);
          return mysqli_fetch_array($query);
-
     }
-
         public function Del_person($id){
 			include('./include/connectdb.php');
-
 		if(isset($id)){
 			$sql = "DELETE FROM tbl_person WHERE id='$id'";
 			$query = mysqli_query($conn,$sql);
@@ -76,6 +70,5 @@ class ManagePerson
 			return false;
 		}
 	}
-
 }
 ?>

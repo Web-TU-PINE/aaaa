@@ -19,7 +19,7 @@ class ManageNews
         }
         return $date;
     }
-    
+
       public function Add_News($header=null,$content=null,$nameimg=null){
          include('../include/connectdb.php');
          $Fullname = $_FILES['image']['name'];
@@ -42,30 +42,30 @@ class ManageNews
              echo "ไม่สนับสนุนไฟล์นี้";
         }
     }
-     public function Edit_News($header=null,$content=null,$id=null){
-       include('./include/connectdb.php');
-        $sql = "UPDATE tbl_news set header = '$header',content='$content' WHERE id='".$id."'";
+     public function Edit_News($header=null,$content=null,$id=null,$nameimg=null){
+       include('../include/connectdb.php');
+        $sql = "UPDATE tbl_news set header = '$header',content='$content',nameimg='$nameimg' WHERE id='".$id."'";
         $query = mysqli_query($conn,$sql);
         if($query){
-             
+            header("Location: ..\showAllnew.php?status=admin");
             return "Edit News Complete";
         }else{
             return "error";
         }
-        
+
     }
-    
+
      public function Select_News($id=null){
-          include('./include/connectdb.php');
+          include('../include/connectdb.php');
          $sql = "SELECT*FROM tbl_news WHERE id = '".$id."'";
          $query = mysqli_query($conn,$sql);
          return mysqli_fetch_array($query);
-        
+
     }
-    
+
         public function Del_News($id){
 			include('./include/connectdb.php');
-			
+
 		if(isset($id)){
 			$sql = "DELETE FROM tbl_news WHERE id='$id'";
 			$query = mysqli_query($conn,$sql);
@@ -78,6 +78,6 @@ class ManageNews
 			return false;
 		}
 	}
-    
+
 }
 ?>
