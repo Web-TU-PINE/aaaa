@@ -35,28 +35,23 @@
 
             <?php
             include('Logig/ManagePerson.php');
-                    $obj = new ManagePerson;
-                    $row = $obj->Select_person($_GET['id']);
-
+                    $obj = new Manageperson;
+                    $row = $obj->Select_News($_GET['id']);
             ?>
         <div class="row">
         <div class="showNew col-md-8">
-
-             <p>
-             </p>
-                <p>  <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง</h5><?php
-                         echo $row['position'];
+            <div class="header ">
+                <h1> <?php
+                        echo $row['position']."<br><br>";
+                    ?>
+                    </h1>
+            </div>
+             <div class="content text-center col-md-8 ">
+                <p> <?php
+                        echo $row['name'];
                     ?>
                     </p>
-
-               <p> <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ-นามสกุล</h5><?php
-                        echo $row['name']; echo " "; echo $row['lastname'];
-                   ?>
-                   </p>
-
-
-          </p>
-
+            </div>
             <div class="  col-md-8 ">
                  <?php
                     //$url=$row['nameimg'];
@@ -64,17 +59,27 @@
                         //echo "<img src='C:/xampp/htdocs/www/v4/aj.tai/ajtai/Image/".$row['nameimg']."'/>";
                  $url="Logig/Image/".$row['name_img'];
                  // <!-- echo "<a href='View.php?video=$url'>$name</a><br>"; -->
-                 echo "<img src='$url' width='200' height='200'/>";
+                 echo "<img src='$url' width='600' height='400'/>";
                     ?>
 
             </div>
             </div>
             <div class="showTabNew col-md-4">
-
+            <div class="header"> <h1>หัวข้อข่าว</h1></div>
                    <?php
-
-
-                   
+            foreach($obj->ShowAllNews() as $value){
+                echo "<div class='col-md-10 '>";
+               // echo "<h2>".$value['header']."</h2>";
+                //echo "<div class='pull-right'>".$value['id']."</div><hr />";
+                echo "<a class='btn pull-left' href='showNews.php?id=".$value['id']."'><h5>-->".$value['header']."</h5></a>&nbsp";
+                if(isset($_GET['status'])){
+                    if($_GET['status']=='admin'){
+                        echo "<a class='btn btn-success'  href='Admin/edit_news.php?id=".$value['id']."'>Edit</a>&nbsp";
+                         echo "<a class='btn btn-danger' href='?del=".$value['id']."'>Delete</a>";
+                    }
+                }
+                echo "</div>";
+            }
             ?>
             </div>
 
@@ -107,3 +112,5 @@
 
     </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

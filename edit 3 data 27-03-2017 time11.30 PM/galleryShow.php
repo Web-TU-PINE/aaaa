@@ -17,7 +17,7 @@
        <!--START HOME SECTION-->
         <div id="home-sec">
             <div class="img-head">
-                <img src="assets/img/logo1.jpg" height="100%" width="100%">
+                <img src="assets/img/logo.gif">
             </div>
         </div>
         <!--END HOME SECTION-->
@@ -48,7 +48,7 @@
                     $obj = new ManageGallery;
              foreach($obj->ShowAllgalleryImage($_GET['id']) as $value){
                  echo "<div class='col-md-2'>";
-                  echo "<a data-fancybox='gallery' href='Logig/Image/1.jpg.jpeg'>";
+                  echo "<a data-fancybox='gallery' href='Logig/Image/".$value['name_img']."'>";
                   echo "  <img src='Logig/Image/".$value['name_img']."' height='200' width='200'/>";
                   echo "</a></div>";
 

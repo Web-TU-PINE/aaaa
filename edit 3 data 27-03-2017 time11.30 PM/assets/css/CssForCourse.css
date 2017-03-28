@@ -59,31 +59,11 @@
 .dataForCourse2{
     padding: 0px 300px;
 }
+.texttitle{
+    font-size:30px;
+    padding: 0px 150px;
+    color: firebrick;
+}
 .infomation{
     clear: both;
-}
-.texttitle{
-  text-align: center;
-  color: red;
-  font-size:40px;
-}
-
-.text-lift-student{
-  font-size: 20px;
-  padding: 20px 10px;
-}
-
-.pic_life{
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  border: 10px;
-}
-.text-lift-location-topic{
-  font-size: 20px;
-  padding: 20px 10px;
-}
-.text-lift-location-text{
-  font-size: 17px;
-  padding: 0px 50px;
 }
