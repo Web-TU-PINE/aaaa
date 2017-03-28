@@ -10,9 +10,10 @@
                </li>
                        
                 <li class="manage-Course dropdown">
-                   <a href="showAllnew.php" class="btn btn-block btn-info">ManagePerson</a>
+                   <a href="showAllperson.php" class="btn btn-block btn-info">ManagePerson</a>
                         <div class="dropdown-content">
-                               
+                               <a href="Admin/add_person.php">AddPerson</a>
+                               <a href="showAllperson.php?status=admin">HandlePerson</a>
                             </div>
                </li>
 
