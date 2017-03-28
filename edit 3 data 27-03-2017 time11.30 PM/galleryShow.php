@@ -17,7 +17,7 @@
        <!--START HOME SECTION-->
         <div id="home-sec">
             <div class="img-head">
-                <img src="assets/img/logo.gif">
+                <img src="assets/img/logo1.jpg" height="100%" width="100%">
             </div>
         </div>
         <!--END HOME SECTION-->
