@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -35,7 +36,7 @@
                 <div class="row g-pad-bottom">
                     <div class="text-center g-pad-bottom">
                         <div class="col-md-12 col-sm-12 alert-info">
-                            <h4>ปลูกป่าชายเลน อ่าวทุ่งโปร่ง กองพันลาดตระเวณ</h4>
+                          <h2>ภาพกิจกรรม</h2>
                         </div>
 
         <div class="container">
@@ -47,6 +48,7 @@
                   // echo $obj->ShowTop3News(6,7);
                     $obj = new ManageGallery;
              foreach($obj->ShowAllgalleryImage($_GET['id']) as $value){
+
                  echo "<div class='col-md-2'>";
                   echo "<a data-fancybox='gallery' href='Logig/Image/".$value['name_img']."'>";
                   echo "  <img src='Logig/Image/".$value['name_img']."' height='200' width='200'/>";
