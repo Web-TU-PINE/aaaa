@@ -16,17 +16,18 @@
         $obj = new ManageNews;
         if(isset($_POST['submitEditNews'])&&isset($_GET['id'])){
             if(isset($_POST)){
-            echo $obj->Edit_News($_POST['header'],$_POST['content'],$_GET['id'],$_POST['image']);
+                $name = $_FILES['image']['name'];
+            echo $obj->Edit_News($_POST['header'],$_POST['content'],$_GET['id'],  $name);
             }
         }else{
             echo "Noooo";
         }
-        $row = $obj->Select_News($_GET['id']);
+        $row = $obj->Select_News_edit($_GET['id']);
         ?>
 
         <h2>Edit_News</h2>
 
-        <form class="form" method="post" action="#">
+        <form class="form" method="post" action="#" enctype="multipart/form-data">
             <p class="name">
 
                 <input type="text" name="header" id="header"

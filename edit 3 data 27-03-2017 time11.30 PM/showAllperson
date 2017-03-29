@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-  <!-- <img src="http://placehold.it/1200x400"/> -->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
+  <html lang="en">
 <!--<![endif]-->
     <head>
         <title>Home</title>
@@ -30,36 +24,40 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="well text-center">
-                   ข่าวสารคณะวิศวกรรมมศาสตร์ มหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา
+                   บุคลากรมหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา
                 </div>
             </div>
             <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->
         <?php
-         include('.\Logig\ManageNews.php');
-                $obj = new ManageNews;
+         include('.\Logig\ManagePerson.php');
+                $obj = new ManagePerson;
             if(isset($_GET['del'])){
-                $obj->Del_News($_GET['del']);
+                $obj->Del_person($_GET['del']);
         }
         ?>
         <!--Start Show News-->
         <div class="row">
             <?php
 
-            foreach($obj->ShowAllNews() as $value){
+            foreach($obj->ShowAllperson() as $value){
+
                 echo "<div class='col-md-10'>";
                // echo "<h2>".$value['header']."</h2>";
                 //echo "<div class='pull-right'>".$value['id']."</div><hr />";
-                echo "<a class='btn pull-left' href='showNews.php?id=".$value['id']."'><h5>-->".$value['header']."</h5></a>&nbsp";
+                echo "<a class='btn pull-left' href='showperson.php?id=".$value['id']."'><h5>-->".$value['position']."</h5></a>&nbsp";
                 if(isset($_GET['status'])){
                     if($_GET['status']=='admin'){
-                        echo "<a class='btn btn-success'  href='Admin/edit_news.php?id=".$value['id']."'>Edit</a>&nbsp";
+                        echo "<a class='btn btn-success'  href='Admin/edit_person.php?id=".$value['id']."'>Edit</a>&nbsp";
                          echo "<a class='btn btn-danger' href='?del=".$value['id']."'>Delete</a>";
                     }
+
                 }
+
                 echo "</div>";
             }
+
             ?>
         </div>
         <!--End  Show News-->

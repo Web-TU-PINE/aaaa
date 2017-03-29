@@ -9,21 +9,19 @@
     ?>
     </head>
     <body>
-        
+
          <!--START HOME SECTION-->
-        <div id="home-sec">
-            <div class="img-head">
-                <img src="assets/img/logo.gif">
-            </div>
-        </div>
+         <?php
+             include('include/imageHeade.php');
+         ?>
         <!--END HOME SECTION-->
        <!--START NAV SECTION-->
          <?php
             include('include/MENU.php');
         ?>
         <!--END NAV SECTION-->
-        
-       
+
+
 
 
         <!-- START NEWS SECTIOLN  - <!-- Page Content -->
@@ -36,20 +34,20 @@
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
-                   
+
                 </ol>
                 <!-- Wrapper for Slides -->
                 <div class="carousel-inner">
-                  
+
                     <!-- <div class="item  active"> -->
                     <?php
                       include('Logig/ManageNews.php');
                       // $obj = new ManageNews;
                       // echo $obj->ShowTop3News(6,7);
-                      
+
                         $obj = new ManageNews;
-                 foreach($obj->ShowTop3News(1,1) as $value){
-                    
+                 foreach($obj->ShowTop3News(5,5) as $value){
+
                      echo "<div class='item active'>";
                      echo "<div class='row'>";
                      echo "<div class='col-md-8'>";
@@ -57,23 +55,22 @@
                      echo "</div>
                         <div class='col-md-4'>";
                       echo "<h2>".$value['header']."</h2>";
-                      echo "<p>".$value['content']."</p>";
                       echo "<a class='btn btn-primary btn-lg' href='showNews.php?id=".$value['id']."'>Read More >> </a>";
-                      echo "</div>                      
+                      echo "</div>
                     </div>";
                      // <!-- /.row -->
                     echo "</div>";
                      }
-                   
+
                    ?>
                    <!-- </div> -->
-                    
+
                     <!-- <div class="item "> -->
                     <?php
-                      
+
                         $obj = new ManageNews;
                  foreach($obj->ShowTop3News(2,4) as $value){
-                    
+
                       echo "<div class='item'>";
                      echo "<div class='row'>";
                      echo "<div class='col-md-8'>";
@@ -81,14 +78,13 @@
                      echo "</div>
                         <div class='col-md-4'>";
                       echo "<h2>".$value['header']."</h2>";
-                      echo "<p>".$value['content']."</p>";
                       echo "<a class='btn btn-primary btn-lg' href='showNews.php?id=".$value['id']."'>Read More >> </a>";
-                      echo "</div>                      
+                      echo "</div>
                     </div>";
                      // <!-- /.row -->
                     echo "</div>";
                      }
-                   
+
                    ?>
                    <!-- </div> -->
                  </div>
@@ -100,12 +96,12 @@
             <span class="icon-next"></span>
         </a>
             </div>
-           
+
             <!-- /.col-md-4 -->
-      
+
 
         <hr>
-        
+
         <!-- Call to Action Well -->
         <div class="row">
             <div class="col-lg-12">
@@ -120,17 +116,16 @@
          <!-- Content Row -->
         <div class="row">
             <?php
-                   
-            foreach($obj->ShowTop3News(2,3) as $value){
-                echo "<div class='col-md-4'>";
+
+            foreach($obj->ShowTop3News(2,2) as $value){
+                echo "<div class='col-md-6'>";
                 echo "<h2>".$value['header']."</h2>";
-                echo "<p>".$value['content']."</p>";
                 echo "<a class='btn btn-info' href='showNews.php?id=".$value['id']."'>More Info</a>";
                 echo "</div>";
             }
-            
+
             ?>
-           
+
             <!-- /.col-md-4 -->
         </div>
         <!-- /.row -->
@@ -138,7 +133,7 @@
             <h1><a class='btn btn-success' href='showAllnew.php'>ข่าวทั้งหมด</a></h1>
         </div>
         <!-- END NEWS SECTIOLN  -->
-        
+
         </div>
           <!--START FOOTER-->
         <div class="col-md-12 footer">
@@ -147,14 +142,14 @@
         ?>
         </div>
         <!--END FOOTER-->
-        
+
         <?php
             include('include/script.php');
         ?>
-        
-        
+
+
     <!-- Script to Activate the Carousel -->
-        
+
         <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed

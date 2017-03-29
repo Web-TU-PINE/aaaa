@@ -6,7 +6,7 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
-  
+
     <title>SOFTWARE</title>
     <?php
         include('include/head-tag.php');
@@ -14,22 +14,20 @@
    </head>
     <body>
          <!--START HOME SECTION-->
-        <div id="home-sec">
-            <div class="img-head">
-                <img src="assets/img/logo.gif">
-            </div>
-        </div>
+         <?php
+             include('include/imageHeade.php');
+         ?>
         <!--END HOME SECTION-->
-        
-        
+
+
        <!--START NAV SECTION-->
          <?php
             include('include/MENU.php');
         ?>
         <!--END NAV SECTION-->
-        
-        
-        
+
+
+
          <!--START TAB SOFT SECTION-->
         <div class="tab-soft col-md-12">
             <div class="tab-example">
@@ -45,7 +43,7 @@
     <p style="text-align: center;"><strong>หลักสูตรวิศวกรรมศาสตรบัณฑิต</strong></p>
     <p style="text-align: center;"><strong>สาขาวิชาวิศวกรรมซอฟต์แวร์</strong></p>
     <p style="text-align: center;"><strong>(หลักสูตรใหม่ พ.ศ. 2557)</strong></p>
-    
+
     <div class="dataForCourse"><strong>ชื่อสถาบันอุดมศึกษา</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; มหาวิทยาลัยธรรมศาสตร์</div>
 <br>
 <div class="dataForCourse"><strong>วิทยาเขต/คณะ/ภาควิชา</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ศูนย์รังสิต และศูนย์พัทยา คณะวิศวกรรมศาสตร์ </div>
@@ -89,7 +87,7 @@
     <div class="dataForCourse2">เรียนที่คณะวิศวกรรมศาสตร์ มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต สำหรับชั้นปีที่ 1 และเรียนที่ศูนย์พัทยาตั้งแต่ชั้นปีที่ 2 จนจบหลักสูตร</div>
                         </div>
                          <!--END INFOMATION TAB-1 SECTION-->
-                        
+
                         <!--START INFOMATION TAB-1 SECTION-->
                         <div class="tab-pane text-center" id="tab2"><p style="margin-left:18pt;">
 	<strong>โครงสร้างหลักสูตร</strong><strong>&nbsp;&nbsp; Soft EN&nbsp; พ.ศ.2557 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></p>
@@ -604,11 +602,11 @@
             </div>
         </div>
         <!--END TAB SOFT SECTION-->
-        
-       
+
+
         <!--START INFOMATION TAB-1 SECTION-->
         <div class="infomation col-md-12" id="tabs-1">
-            
+
         </div>
         <!--END INFOMATION TAB-1 SECTION->
 
@@ -620,10 +618,10 @@
         ?>
         </div>
         <!--END FOOTER-->
-        
+
    <?php
             include('include/script.php');
         ?>
-    
+
     </body>
 </html>

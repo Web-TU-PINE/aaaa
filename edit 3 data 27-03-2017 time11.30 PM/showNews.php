@@ -13,12 +13,11 @@
     ?>
     </head>
     <body>
-        
+
          <!--START HOME SECTION-->
-        <div id="home-sec">
-            <div class="img-head">
-                <img src="assets/img/logo.gif">
-            </div>
+         <?php
+             include('include/imageHeade.php');
+         ?>
         </div>
         <!--END HOME SECTION-->
        <!--START NAV SECTION-->
@@ -26,7 +25,7 @@
             include('include/MENU.php');
         ?>
         <!--END NAV SECTION-->
-        
+
           <!-- Call to Action Well -->
         <div class="row">
             <div class="col-lg-12">
@@ -37,14 +36,14 @@
             <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->
-        
-         
+
+
             <?php
             include('Logig/ManageNews.php');
                     $obj = new ManageNews;
                     $row = $obj->Select_News($_GET['id']);
-          
-            ?>  
+
+            ?>
         <div class="row">
         <div class="showNew col-md-8">
             <div class="header ">
@@ -66,15 +65,16 @@
                         //echo "<img src='C:/xampp/htdocs/www/v4/aj.tai/ajtai/Image/".$row['nameimg']."'/>";
                  $url="Logig/Image/".$row['nameimg'];
                  // <!-- echo "<a href='View.php?video=$url'>$name</a><br>"; -->
-                 echo "<img src='$url' width='600' height='400'/>";
+                 echo $url;
+                 echo"<img class='img-slide' src='Logig/Image/".$row['nameimg']."' width='600' height='400'>";
                     ?>
-                    
+
             </div>
             </div>
             <div class="showTabNew col-md-4">
             <div class="header"> <h1>หัวข้อข่าว</h1></div>
                    <?php
-               
+
             foreach($obj->ShowAllNews() as $value){
                 echo "<div class='col-md-10 '>";
                // echo "<h2>".$value['header']."</h2>";
@@ -92,10 +92,10 @@
             </div>
 
         </div>
-       
-   
-        
-    
+
+
+
+
           <!--START FOOTER-->
         <div class="col-md-12 footer">
         <?php
@@ -103,14 +103,14 @@
         ?>
         </div>
         <!--END FOOTER-->
-        
+
         <?php
             include('include/script.php');
         ?>
-        
-        
+
+
     <!-- Script to Activate the Carousel -->
-        
+
         <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed

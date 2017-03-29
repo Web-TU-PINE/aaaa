@@ -6,20 +6,19 @@
         include('include/head-tag.php');
     ?>
 </head>
-	<body>	
+	<body>
 
          <!--START HOME SECTION-->
-        <div id="home-sec">
-            <div class="img-head">
-                <img src="assets/img/logo.gif">
-            </div>
-        </div>
+				 <?php
+						 include('include/imageHeade.php');
+				 ?>
         <!--END HOME SECTION-->
-        
+
 			 <?php
             include('include/MENU.php');
             include('include/TabAdminMENU.php');
+						include('include/script.php');
         	?>
-            
+				
 	</body>
 </html>
