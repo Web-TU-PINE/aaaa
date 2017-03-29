@@ -12,7 +12,7 @@
                </li>
 
                 <li class="manage-Course dropdown">
-                   <a href="showAllperson.php" class="btn btn-block btn-info">ManagePerson</a>
+                   <a href="#" class="btn btn-block btn-info">ManagePerson</a>
                         <div class="dropdown-content">
                                <a href="Admin/add_person.php?status=admin">AddPerson</a>
                                <a href="person.php?status=admin">HandlePerson</a>
@@ -28,7 +28,11 @@
                </li>
 
                 <li class="manage-Course dropdown">
-                   <a href="showAllnew.php" class="btn btn-block btn-info">ManageLife</a>
+                   <a href="#" class="btn btn-block btn-info">ManageGallery</a>
+                   <div class="dropdown-content">
+                           <a href="Admin/add_gallery.php?status=admin">AddActivity</a>
+                           <a href="gallery.php?status=admin">HandleActivity</a>
+                       </div>
                </li>
                </div>>
             </div>
