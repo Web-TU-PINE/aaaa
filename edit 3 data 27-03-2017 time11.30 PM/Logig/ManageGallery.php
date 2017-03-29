@@ -29,6 +29,41 @@
               echo "สัสสสสส";
             }
  	}
+  public function Select_gellery($id=null){
+       include('./include/connectdb.php');
+      $sql = "SELECT*FROM multiupload WHERE id = '".$id."'";
+      $query = mysqli_query($conn,$sql);
+      return mysqli_fetch_array($query);
+
+ }
+  public function Del_gallery($id){
+  include('./include/connectdb.php');
+  if(isset($id)){
+    //$sql="delete from bill_deposit where id_dep='$id' ";
+/*(ลบข้อมูลจากตาราง 2 ตาราง)*/ $sql="DELETE FROM `main`,`multiupload` USING `main`
+INNER JOIN `multiupload`
+WHERE `ActivityName`.`id` = '$id'
+AND `ActivityCode`.`id` = `ActivityName`.`id`";
+$result=mysql_db_query($dbname,$sql);
+if ($result) {
+echo "<script> alert('ลบข้อการขายฝากเรียบร้อยแล้ว')</script>";
+echo" <meta http-equiv='refresh' content='0; url=admin_edit_pledge.php' />";
+} else {
+echo "<h3>ไม่สามารถลบข้อมูลได้ครับ</h3>";
+}
+mysql_close();
+
+    $query = mysqli_query($conn,$sql);
+    if($query){
+              header("Location: ..\gallery.php?status=admin");
+        return $date = "Delete Complete";
+    }
+
+  }
+  else {
+    return false;
+  }
+}
 
   public function create_activity($ActivityName=null,$codeActivity=null){
  		include('../include/connectdb.php');
